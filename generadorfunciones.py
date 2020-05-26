@@ -13,7 +13,7 @@ class MainWindow(QMainWindow):
         self.pause= True
 
         QMainWindow.__init__(self)
-        loadUi("GUI_tarea.ui", self)
+        loadUi("GUI/guitarea.ui", self)
         self.setWindowTitle("GUI hydrometra")
         self.pushbutton_gen_funcion.clicked.connect(self.update_animation)
         self.pushButton_limpiar.clicked.connect(self.clean_plot)
