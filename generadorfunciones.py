@@ -28,10 +28,11 @@ class MainWindow(QMainWindow):
         self.pushButton_detener.clicked.connect(self.stop_plot)
         self.pushButton_save.clicked.connect(self.save_plot)
         self.pushButton_connect.clicked.connect(self.connect)
+        
 
     def connect(self):
         #Esta parte corresponde a la conexion del arduino
-        self.ser=serial.Serial("COM6",9600)# Se establece la conexion
+        self.ser=serial.Serial(self.puertoArduino.text(),9600)# Se establece la conexion
         if self.ser.isOpen() == True:
             print("conectado")
 

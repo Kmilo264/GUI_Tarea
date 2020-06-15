@@ -18,9 +18,9 @@
     <property name="geometry">
      <rect>
       <x>610</x>
-      <y>150</y>
+      <y>120</y>
       <width>160</width>
-      <height>281</height>
+      <height>341</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -30,6 +30,22 @@
         <string>Conectar Arduino</string>
        </property>
       </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="puertoArduino"/>
      </item>
      <item>
       <spacer name="verticalSpacer_4">
